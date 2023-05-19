@@ -10,5 +10,5 @@ import Admin from "./Admin.js";
 // novoAdmin.nome = ''
 // console.log(novoAdmin.nome)
 
-const novoDocente = new Docente('Guilherme', 'g@g.com', '2021-01-01')
+const novoDocente = new Docente('Diego', 'd@g.com', '2023-01-01')
 console.log(novoDocente.exibirInfos())

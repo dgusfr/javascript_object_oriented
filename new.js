@@ -32,7 +32,7 @@ const user = {
 }
 
 const novoUser = Object.create(user)
-novoUser.init('Juliana', 'j@j.com')
+novoUser.init('Guilherme', 'G@j.com')
 console.log(novoUser.exibirInfos())
 
 // console.log(user.isPrototypeOf(novoUser))
