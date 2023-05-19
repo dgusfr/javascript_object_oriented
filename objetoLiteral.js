@@ -1,4 +1,3 @@
-//objeto1 
 const user = {
   nome: "Juliana",
   email: "j@j.com",
@@ -10,7 +9,6 @@ const user = {
   }
 }
 
-//objeto2
 const admin = {
   nome: "Mariana",
   email: "m@m.com",
@@ -20,11 +18,8 @@ const admin = {
   }
 }
 
-//definindo o objeto 'user' como o protótipo do objeto admin. 
-//Caso o objeto 'admin' não tenha uma propriedade ou método específico, ele irá procurar por essa propriedade ou método no objeto 'user'.
 Object.setPrototypeOf(admin, user)
 admin.criarCurso()
-//o método exibirInfos() não é encontrado no objeto admin, mas é encontrado no protótipo 'user' e "Mariana m@m.com" é impresso no console
 admin.exibirInfos()
 
 
