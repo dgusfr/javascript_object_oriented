@@ -1,6 +1,4 @@
-# Título do Projeto
-
-JavaScript Orientado a Objetos 
+# JavaScript Orientado a Objetos 
 
 ## Sumário
 
