@@ -1,5 +1,7 @@
 # JavaScript Orientado a Objetos 
 
+![Descrição da Imagem](JSOO.png)
+
 ## Sumário
 
 - [Sobre o Projeto](#sobre-o-projeto)
