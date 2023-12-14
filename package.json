@@ -12,13 +12,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JulianaAmoasei/2395-intro-oo-js.git"
+    "url": "git+https://github.com/dgusfr/javascript_object_oriented.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Diego Franco",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JulianaAmoasei/2395-intro-oo-js/issues"
+    "url": "https://github.com/dgusfr/javascript_object_oriented"
   },
-  "homepage": "https://github.com/JulianaAmoasei/2395-intro-oo-js#readme"
+  "homepage": "https://github.com/dgusfr/javascript_object_oriented#readme"
 }
