@@ -1,41 +1,62 @@
-# JavaScript e Orientação a Objetos
+# Projeto JavaScript e Orientação a Objetos
 
-![Descrição da Imagem](img/proj.png)
+Um projeto que explora conceitos de programação orientada a objetos em JavaScript, criando e manipulando diferentes tipos de usuários como `User`, `Admin`, e `Docente`.
+
+## Logo
+
+<div align="center">
+  <img src="img/proj.png" alt="Imagem do Projeto" width="600">
+</div>
 
 ## Sumário
 
-1. [User.js](#userjs)
-2. [Admin.js](#adminjs)
-3. [index.js](#indexjs)
-4. [new.js](#newjs)
-5. [docente.js](#docentejs)
-6. [Objetoliteral.js](#objetoliteraljs)
-7. [Conclusão](#conclusão)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Status](#status)
+- [Descrição](#descrição)
+- [Funcionalidades](#funcionalidades)
+- [Como Usar](#como-usar)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+- [Autor](#autor)
 
-## User.js
+## Tecnologias Utilizadas
 
-O código define uma classe `User` com propriedades privadas (`#nome`, `#email`, `#nascimento`, `#role`, `#ativo`) e métodos para acessar e modificar essas propriedades. A classe também possui um método `exibirInfos()` que retorna uma string formatada com as informações do usuário.
+<div style="display: flex; flex-direction: row;">
+  <div style="display: flex; justify-content: flex-end;">
+    <img src="img/js.png" alt="Logo CSS" width="100"/>
+  </div>
+</div>
 
-## Admin.js
+## Status
 
-O código define uma classe `Admin` que estende a classe `User`. O construtor da classe `Admin` chama o construtor da classe `User` e define o papel (`role`) como "admin" por padrão. Além disso, há um método `criarCurso` específico para a classe `Admin`.
+<!--![Em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge)  -->
 
-## index.js
+![Concluído](http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge)
 
-Importa a classe `Docente` e cria uma instância dela chamada `novoDocente`. Em seguida, chama o método `exibirInfos()` da instância criada.
+## Descrição
 
-## new.js
+O projeto abrange a criação e manipulação de diferentes tipos de usuários (`User`, `Admin`, `Docente`) em JavaScript, demonstrando conceitos como herança, protótipos e criação de objetos.
 
-Define um objeto literal chamado `user` com métodos `init` e `exibirInfos`. Em seguida, cria um novo objeto `novoUser` usando `Object.create` e chama os métodos.
+## Funcionalidades
 
-## docente.js
+- Manipulação de propriedades privadas em classes.
+- Extensão de classes para criar novos tipos de usuários.
+- Demonstração de herança e prototipagem.
 
-Define uma classe `Docente` que estende a classe `User`. O construtor da classe `Docente` chama o construtor da classe `User` e define o papel (`role`) como "docente" por padrão. Além disso, há um método `aprovaEstudante` específico para a classe `Docente`.
+## Como Usar
 
-## Objetoliteral.js
+1. Importe classes conforme necessário.
+2. Crie instâncias de usuários e utilize métodos correspondentes.
+3. Explore funcionalidades específicas de diferentes tipos de usuários.
 
-Cria dois objetos literais (`user` e `admin`). Define `user` como protótipo de `admin` usando `Object.setPrototypeOf`. Isso significa que se uma propriedade ou método não for encontrado em `admin`, ele será procurado em `user`. Demonstração disso com o método `exibirInfos()`.
+## Estrutura do Projeto
 
-## Conclusão
+- `User.js`: Define a classe `User` com propriedades privadas e métodos de acesso/modificação.
+- `Admin.js`: Define a classe `Admin` que estende `User` e possui método específico para criação de curso.
+- `index.js`: Importa a classe `Docente` e demonstra o uso do método `exibirInfos()`.
+- `new.js`: Define um objeto literal chamado `user` com métodos `init` e `exibirInfos`.
+- `docente.js`: Define a classe `Docente` que estende `User` e possui método específico para aprovar estudantes.
+- `Objetoliteral.js`: Cria dois objetos literais (`user` e `admin`) com prototipagem entre eles.
 
-Cada arquivo lida com a criação e manipulação de diferentes tipos de usuários (`User`, `Admin`, `Docente`) e demonstra conceitos como herança, protótipos e criação de objetos.
+## Autor
+
+Desenvolvido por Diego Franco.
