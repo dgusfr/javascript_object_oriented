@@ -1,4 +1,4 @@
-# Projeto JavaScript e Orientação a Objetos
+# avaScript e Orientação a Objetos (POO)
 
 Um projeto que explora conceitos de programação orientada a objetos em JavaScript, criando e manipulando diferentes tipos de usuários como `User`, `Admin`, e `Docente`.
 
