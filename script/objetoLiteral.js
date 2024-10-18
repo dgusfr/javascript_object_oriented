@@ -1,6 +1,6 @@
 // objeto1
 const user = {
-  nome: "Juliana",
+  nome: "João",
   email: "j@j.com",
   nascimento: "2021/01/01",
   role: "estudante",
@@ -12,7 +12,7 @@ const user = {
 
 // objeto2
 const admin = {
-  nome: "Mariana",
+  nome: "Maria",
   email: "m@m.com",
   role: "admin",
   criarCurso() {
