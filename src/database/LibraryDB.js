@@ -89,11 +89,20 @@ class LibraryDB {
 
     book.availableCopies -= 1;
     this.loans.push(loan);
+
     return loan;
   }
 
-  getLoans(filterFind = () => true) {
-    return this.loans.filter(filterFind);
+  getLoans(filterFind) {
+    if (!filterFind) {
+      return this.loans;
+    }
+
+    const filteredLoans = this.loans.filter((loan) => {
+      return filterFind(loan);
+    });
+
+    return filteredLoans;
   }
 
   updateLoan(id, updatedData) {
