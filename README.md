@@ -1,6 +1,6 @@
 # Sistema de Gerenciamento de Biblioteca
 
-## Descrição Geral:
+## Descrição Geral
 
 O sistema permite o gerenciamento de livros, membros e empréstimos. Ele oferece funcionalidades para cadastrar novos livros, registrar membros, emprestar e devolver livros, além de consultar o status dos empréstimos.
 
