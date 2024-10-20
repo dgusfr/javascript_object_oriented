@@ -74,19 +74,20 @@ class LibraryDB {
 
   addLoan(loan) {
     const book = this.books.find((book) => book.id === loan.bookId);
-    const member = this.members.find((member) => member.id === loan.memberId);
-
     if (!book) {
-      throw new Error("Livro não encontrado.");
+      throw new Error("Livro não encontrado");
     }
+
+    const member = this.members.find((member) => member.id === loan.memberId);
     if (!member) {
       throw new Error("Membro não encontrado.");
     }
+
     if (book.availableCopies <= 0) {
       throw new Error("Não há cópias disponíveis para empréstimo.");
     }
 
-    book.availableCopies--;
+    book.availableCopies -= 1;
     this.loans.push(loan);
     return loan;
   }
