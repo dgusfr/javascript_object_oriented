@@ -29,3 +29,17 @@ classe Livrocontroler :
   }
  mudulo.exporta = livroController
  */
+
+class BookController {
+  static addBook(id, title, author, year, copies) {
+    const newBook = new Book(id, title, author, year, copies);
+    LibraryDB.addBook(newBook);
+    console.log(`Livro ${title} adicionado com sucesso`);
+  }
+
+  static getBooks(filterFn = null) {
+    return LibraryDB.getBooks(filterFn);
+  }
+
+  static;
+}
