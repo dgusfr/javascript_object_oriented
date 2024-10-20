@@ -41,5 +41,10 @@ class BookController {
     return LibraryDB.getBooks(filterFn);
   }
 
-  static;
+  static updateBook(id, updatedData){
+    try{
+      const updatedBook = LibraryDB.updateBook(id, updatedData)
+      console.log
+    }
+  }
 }
