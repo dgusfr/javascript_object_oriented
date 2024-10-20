@@ -1,23 +1,6 @@
 const LibraryDB = require("../database/LibraryDB");
 const Book = require("../models/Book");
 /*
-classe Livrocontroler :
- estatico adicioLivro(id, titulo, autor, ano, e copia){
-  novo livro recebe new livro(id, titulo, autor, ano, e copia)
-  livraryDB.adicionalivo(novolicro)
-  "LIvro adicionado com sucesso"
- }
-
- estativco pegalivros(){
- retorna livrariaDB.égalivros()
- }
-
- estatico atualiza livros(id,atualizaDados){
- tente{
- atualizalivro recebe livrariadb.atualizalivro(id, atualizaDados)}
- "Livro atualizado"
- retuna atualizalivro
- }
 
  estatico deletalivbro(id){
  tente{
@@ -41,10 +24,15 @@ class BookController {
     return LibraryDB.getBooks(filterFn);
   }
 
-  static updateBook(id, updatedData){
-    try{
-      const updatedBook = LibraryDB.updateBook(id, updatedData)
-      console.log
+  static updateBook(id, updatedData) {
+    try {
+      const updatedBook = LibraryDB.updateBook(id, updatedData);
+      console.log(`Livro de ID ${id} atualizado com sucesso.`);
+      return updatedBook;
+    } catch (error) {
+      console.log(error.message);
     }
   }
+
+  static deleteBook(id) {}
 }
