@@ -25,7 +25,7 @@ class LibraryDB {
   updateBook(id, updatedData) {
     const index = this.books.findIndex((book) => book.id === id);
     if (index !== -1) {
-      // A baixo estamos comparando os valores de books (por indece) com os valores de updateData, conforme percorremos o array
+      // A baixo estamos comparando os valores de books (por indice) com os valores de updateData, conforme percorremos o array
       this.books[index] = { ...this.books[index], ...updatedData };
       return this.books[index];
     }
