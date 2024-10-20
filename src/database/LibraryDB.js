@@ -47,8 +47,16 @@ class LibraryDB {
     return member;
   }
 
-  getMembers(filterFind = () => true) {
-    return this.members.filter(filterFind);
+  getMembers(filterFind) {
+    if (!filterFind) {
+      return this.books;
+    }
+
+    const filteredMembers = this.members.find((member) => {
+      return filterFind(member);
+    });
+
+    return filteredMembers;
   }
 
   updateMember(id, updatedData) {
