@@ -49,10 +49,10 @@ class LibraryDB {
 
   getMembers(filterFind) {
     if (!filterFind) {
-      return this.books;
+      return this.members;
     }
 
-    const filteredMembers = this.members.find((member) => {
+    const filteredMembers = this.members.filter((member) => {
       return filterFind(member);
     });
 
