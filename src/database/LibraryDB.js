@@ -10,8 +10,16 @@ class LibraryDB {
     return book;
   }
 
-  getBooks(filterFind = () => true) {
-    return this.books.filter(filterFind);
+  getBooks(filterFind) {
+    if (!filterFind) {
+      return this.books;
+    }
+
+    const filteredBooks = this.books.filter((book) => {
+      return filterFind(book);
+    });
+
+    return filteredBooks;
   }
 
   updateBook(id, updatedData) {
