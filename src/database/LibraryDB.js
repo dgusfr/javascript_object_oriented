@@ -24,7 +24,13 @@ class LibraryDB {
   }
 
   removeBook(id) {
-    this.books = this.books.filter((book) => book.id !== id);
+    const index = this.books.findIndex((book) => book.id === id);
+    if (index !== -1) {
+      this.book.splice(index, 1);
+      console.log(`Livro de id: ${id} removido com sucesso`);
+    } else {
+      console.log(`Livro de id: ${id} não encontrado`);
+    }
   }
 
   addMember(member) {
