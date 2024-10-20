@@ -10,8 +10,8 @@ class LibraryDB {
     return book;
   }
 
-  getBooks(filterFn = () => true) {
-    return this.books.filter(filterFn);
+  getBooks(filterFind = () => true) {
+    return this.books.filter(filterFind);
   }
 
   updateBook(id, updatedData) {
@@ -32,8 +32,8 @@ class LibraryDB {
     return member;
   }
 
-  getMembers(filterFn = () => true) {
-    return this.members.filter(filterFn);
+  getMembers(filterFind = () => true) {
+    return this.members.filter(filterFind);
   }
 
   updateMember(id, updatedData) {
@@ -68,8 +68,8 @@ class LibraryDB {
     return loan;
   }
 
-  getLoans(filterFn = () => true) {
-    return this.loans.filter(filterFn);
+  getLoans(filterFind = () => true) {
+    return this.loans.filter(filterFind);
   }
 
   updateLoan(id, updatedData) {
