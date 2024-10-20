@@ -1,17 +1,5 @@
 const LibraryDB = require("../database/LibraryDB");
 const Book = require("../models/Book");
-/*
-
- estatico deletalivbro(id){
- tente{
-  livrariaDB.removelivro(id)
-  "Livro removido"
-  } catch (error) {
-   "(error.messagem)"
-   }
-  }
- mudulo.exporta = livroController
- */
 
 class BookController {
   static addBook(id, title, author, year, copies) {
@@ -34,5 +22,12 @@ class BookController {
     }
   }
 
-  static deleteBook(id) {}
+  static deleteBook(id) {
+    try {
+      LibraryDB.removeBook(id);
+      console.log(`Livro de id ${id} removido com sucesso`);
+    } catch (error) {
+      console.log(message.error);
+    }
+  }
 }
