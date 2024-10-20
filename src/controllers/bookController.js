@@ -27,7 +27,7 @@ class BookController {
       LibraryDB.removeBook(id);
       console.log(`Livro de id ${id} removido com sucesso`);
     } catch (error) {
-      console.log(message.error);
+      console.log(error.message);
     }
   }
 }
