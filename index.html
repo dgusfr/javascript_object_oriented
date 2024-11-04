@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -54,28 +54,28 @@
 
     <section class="list">
       <h2>Listar Livros</h2>
-      <button onclick="listBooks()">Atualizar Lista de Livros</button>
+      <button onclick="app.listBooks()">Atualizar Lista de Livros</button>
       <ul id="bookList"></ul>
     </section>
 
     <section class="list">
       <h2>Listar Membros</h2>
-      <button onclick="listMembers()">Atualizar Lista de Membros</button>
+      <button onclick="app.listMembers()">Atualizar Lista de Membros</button>
       <ul id="memberList"></ul>
     </section>
 
     <section class="list">
       <h2>Listar Empréstimos</h2>
-      <button onclick="listLoans()">Atualizar Lista de Empréstimos</button>
+      <button onclick="app.listLoans()">Atualizar Lista de Empréstimos</button>
       <ul id="loanList"></ul>
     </section>
   </div>
 
   <!-- Importação dos arquivos JavaScript -->
   <script src="js/libraryDB.js"></script>
-  <script src="js/bookController.js"></script>
-  <script src="js/memberController.js"></script>
-  <script src="js/loanController.js"></script>
+  <script src="js/book.js"></script>
+  <script src="js/member.js"></script>
+  <script src="js/loan.js"></script>
   <script src="js/app.js"></script>
 </body>
 
