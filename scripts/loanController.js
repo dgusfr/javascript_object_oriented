@@ -1,38 +1,41 @@
-const LibraryDB = require("../database/LibraryDB");
-const Loan = require("../src/models/Loan");
+function addLoan(id, bookId, memberId) {
+  const book = libraryDB.books.find((book) => book.id === bookId);
+  const member = libraryDB.members.find((member) => member.id === memberId);
 
-class LoanController {
-  static createLoan(loanId, bookId, memberId) {
-    const newLoan = new Loan(loanId, bookId, memberId, new Date());
-    try {
-      LibraryDB.addLoan(newLoan);
-      console.log("Empréstimo registrado com sucesso.");
-    } catch (error) {
-      console.error(`Erro ao registrar o empréstimo: ${error.message}`);
-    }
+  if (!book || !member) {
+    alert("Livro ou membro não encontrado!");
+    return;
   }
 
-  static getLoans(filterFn = null) {
-    return LibraryDB.getLoans(filterFn);
+  if (book.availableCopies <= 0) {
+    alert("Não há cópias disponíveis para empréstimo.");
+    return;
   }
 
-  static closeLoan(loanId) {
-    try {
-      LibraryDB.closeLoan(loanId);
-      console.log("Empréstimo encerrado com sucesso.");
-    } catch (error) {
-      console.error(`Erro ao encerrar o empréstimo: ${error.message}`);
-    }
-  }
-
-  static deleteLoan(loanId) {
-    try {
-      LibraryDB.removeLoan(loanId);
-      console.log(`Empréstimo de ID ${loanId} removido com sucesso.`);
-    } catch (error) {
-      console.error(error.message);
-    }
-  }
+  book.availableCopies -= 1;
+  libraryDB.loans.push({
+    id,
+    bookId,
+    memberId,
+    loanDate: new Date(),
+    returnDate: null,
+  });
+  alert("Empréstimo registrado com sucesso.");
 }
 
-module.exports = LoanController;
+function closeLoan(id) {
+  const loan = libraryDB.loans.find((loan) => loan.id === id);
+
+  if (!loan || loan.returnDate) {
+    alert("Empréstimo não encontrado ou já encerrado.");
+    return;
+  }
+
+  const book = libraryDB.books.find((book) => book.id === loan.bookId);
+  if (book) {
+    book.availableCopies += 1;
+  }
+
+  loan.returnDate = new Date();
+  alert("Empréstimo encerrado com sucesso.");
+}
