@@ -28,6 +28,7 @@ class App {
     const loan = new Loan(id, bookId, memberId);
     libraryDB.addLoan(loan);
     alert("Empréstimo registrado com sucesso.");
+    this.listLoans();
   }
 
   closeLoan(id) {
@@ -42,6 +43,7 @@ class App {
     book.returnBook();
     loan.closeLoan();
     alert("Empréstimo encerrado com sucesso.");
+    this.listLoans(); // Atualiza a lista de empréstimos automaticamente
   }
 
   listBooks() {
