@@ -1,5 +1,5 @@
 const LibraryDB = require("../database/LibraryDB");
-const Member = require("../models/Member");
+const Member = require("../src/models/Member");
 
 class MemberController {
   static addMember(id, name, email) {

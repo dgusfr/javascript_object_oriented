@@ -1,5 +1,5 @@
 const LibraryDB = require("../database/LibraryDB");
-const Loan = require("../models/Loan");
+const Loan = require("../src/models/Loan");
 
 class LoanController {
   static createLoan(loanId, bookId, memberId) {

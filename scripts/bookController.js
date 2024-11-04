@@ -1,5 +1,5 @@
-const LibraryDB = require("../database/LibraryDB");
-const Book = require("../models/Book");
+const LibraryDB = require("./LibraryDB");
+const Book = require("../src/models/Book");
 
 class BookController {
   static addBook(id, title, author, year, copies) {
