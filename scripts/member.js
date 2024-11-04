@@ -1,3 +1,7 @@
-function addMember(id, name, email) {
-  libraryDB.members.push({ id, name, email });
+class Member {
+  constructor(id, name, email) {
+    this.id = id;
+    this.name = name;
+    this.email = email;
+  }
 }
