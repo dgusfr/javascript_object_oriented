@@ -1,0 +1,23 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+h2 {
+  color: #333;
+}
+form {
+  margin-bottom: 20px;
+}
+input,
+button {
+  padding: 8px;
+  margin: 5px;
+  font-size: 16px;
+}
+.list {
+  margin-top: 20px;
+}
