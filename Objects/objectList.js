@@ -19,3 +19,4 @@ console.log(student.address);
 const addressWithComplement = student.address.filter((address) => {
   return address.complement;
 });
+console.log(addressWithComplement);
