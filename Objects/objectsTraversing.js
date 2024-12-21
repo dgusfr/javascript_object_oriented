@@ -15,3 +15,7 @@ const student = {
     complement: null
   },]
 }
+
+for (let key in student) {
+  console.log(student[key]);
+}
