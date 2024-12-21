@@ -5,8 +5,8 @@ const student = {
   position: 'developer'
 }
 
-console.log(student.name)
-
 function infoStudent(objstudent, infoStudent){
   return objstudent[infoStudent]
 }
+
+console.log(infoStudent(student, 'position'))
