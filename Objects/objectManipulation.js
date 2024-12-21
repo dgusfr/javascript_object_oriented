@@ -6,3 +6,10 @@ const student = {
   telephone: ['5511999999999', '5511888888888']
 }
 
+student.address = {
+  street: 'R. Joseph Climper',
+  number: '45',
+  complement: 'apt. 43'
+}
+
+console.log(student)
