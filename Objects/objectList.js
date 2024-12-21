@@ -11,5 +11,7 @@ const student = {
   }]
 }
 
+student.address.push({street: 'Av. Paulista', number: '1230'});
+
 console.log(student.address);
 console.log(student.address[0]);
