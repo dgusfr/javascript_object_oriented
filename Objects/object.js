@@ -9,4 +9,5 @@ function infoStudent(objstudent, infoStudent){
   return objstudent[infoStudent]
 }
 
-console.log(infoStudent(student, 'position'))
+console.log(infoStudent(student, 'name'))
+console.log(student['position'])
