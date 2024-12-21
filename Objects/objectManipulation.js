@@ -14,6 +14,7 @@ student.address = {
   complement: 'apt. 43'
 }
 
+// Accessing Properties
 console.log(student)
 console.log(student.address)
 console.log(student.address.street)
