@@ -11,3 +11,4 @@ function infoStudent(objstudent, infoStudent){
 
 console.log(infoStudent(student, 'name'))
 console.log(student['position'])
+console.log(student.cpf)
