@@ -12,3 +12,4 @@ const student = {
 }
 
 console.log(student.address);
+console.log(student.address[0]);
