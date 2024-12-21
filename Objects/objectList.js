@@ -11,6 +11,7 @@ const student = {
   }]
 }
 
+//Adding a new address to the student
 student.address.push({street: 'Av. Paulista', number: '1230'});
 
 console.log(student.address);
