@@ -18,5 +18,6 @@ const student = {
 }
 
 for (let key in student) {
-  console.log(student[key]);
+  const text = `The Key is: ${key} and the value is: ${student[key]}`;
+  console.log(text);
 }
