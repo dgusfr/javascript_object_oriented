@@ -18,3 +18,4 @@ const student = {
 }
 
 const keysOfObject = Object.keys(student);
+console.log(keysOfObject);
