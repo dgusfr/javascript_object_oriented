@@ -19,3 +19,7 @@ const student = {
 
 const keysOfObject = Object.keys(student);
 console.log(keysOfObject);
+
+if(!keysOfObject.includes('address')) {
+  console.error('The key address does not exist in the object');
+}
