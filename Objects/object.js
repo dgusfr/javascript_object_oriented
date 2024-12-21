@@ -15,3 +15,5 @@ console.log(student['position'])
 console.log(student.cpf)
 
 // Changing Properties
+student.telephone = '5511999999999'
+console.log(student.telephone)
