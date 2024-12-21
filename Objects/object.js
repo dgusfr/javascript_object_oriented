@@ -21,3 +21,7 @@ console.log(student.telephone)
 //Changing Properties
 student.age = 32
 console.log(student.age)
+
+// Deleting a Property
+delete student.cpf;
+console.log(student);
