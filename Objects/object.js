@@ -14,3 +14,4 @@ console.log(infoStudent(student, 'name'))
 console.log(student['position'])
 console.log(student.cpf)
 
+// Changing Properties
