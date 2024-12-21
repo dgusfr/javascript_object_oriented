@@ -17,3 +17,7 @@ console.log(student.cpf)
 // Add Properties
 student.telephone = '5511999999999'
 console.log(student.telephone)
+
+//Changing Properties
+student.age = 32
+console.log(student.age)
