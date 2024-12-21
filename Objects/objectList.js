@@ -15,6 +15,7 @@ const student = {
 student.address.push({street: 'Av. Paulista', number: '1230'});
 console.log(student.address);
 
+//Return the student's address with complement
 const addressWithComplement = student.address.filter((address) => {
   return address.complement;
 });
