@@ -15,3 +15,5 @@ student.address = {
 }
 
 console.log(student)
+console.log(student.address)
+console.log(student.address.street)
