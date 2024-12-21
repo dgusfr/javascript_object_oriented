@@ -13,7 +13,8 @@ const student = {
     street: 'R. Cecilia Pipper',
     number: '525',
     complement: null
-  },]
+  },
+  ]
 }
 
 for (let key in student) {
