@@ -21,7 +21,7 @@ const student = {
 const keysOfObject = Object.keys(student);
 console.log(keysOfObject);
 
-// verify if the key address exists in the object
-if(!keysOfObject.includes('address')) {
-  console.error('The key address does not exist in the object');
+// verify if the key email exists in the object
+if(!keysOfObject.includes('email')) {
+  console.error('The key email does not exist in the object');
 }
