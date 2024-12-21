@@ -5,3 +5,4 @@ const student = {
   position: 'developer'
 }
 
+console.log(student.name)
