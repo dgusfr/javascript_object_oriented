@@ -2,11 +2,11 @@
 
 Este é um sistema simples de gerenciamento de biblioteca que permite adicionar e listar livros, membros, e registrar ou encerrar empréstimos. O projeto usa JavaScript com uma interface HTML/CSS para facilitar a interação do usuário com o sistema.
 
-## Interface
+<!-- ## Interface
 
 <div align="center">
   <img src="img/logo.jpg" alt="Imagem do Projeto" width="900">
-</div>
+</div> -->
 
 ## Sumário
 
