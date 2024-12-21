@@ -10,3 +10,5 @@ const student = {
     complement: 'apt. 43'
   }]
 }
+
+console.log(student.address);
