@@ -17,9 +17,11 @@ const student = {
   ]
 }
 
+// returns an array with the keys of the object
 const keysOfObject = Object.keys(student);
 console.log(keysOfObject);
 
+// verify if the key address exists in the object
 if(!keysOfObject.includes('address')) {
   console.error('The key address does not exist in the object');
 }
