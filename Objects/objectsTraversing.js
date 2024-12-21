@@ -8,5 +8,10 @@ const student = {
     street: 'R. Joseph Climper',
     number: '45',
     complement: 'apt. 43'
-  }]
+  },
+  {
+    street: 'R. Cecilia Pipper',
+    number: '525',
+    complement: null
+  },]
 }
