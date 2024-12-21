@@ -6,3 +6,7 @@ const student = {
 }
 
 console.log(student.name)
+
+function infoStudent(objstudent, infoStudent){
+  
+}
