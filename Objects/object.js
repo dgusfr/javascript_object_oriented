@@ -5,6 +5,7 @@ const student = {
   position: 'developer'
 }
 
+//Acessando Propriedades
 function infoStudent(objstudent, infoStudent){
   return objstudent[infoStudent]
 }
