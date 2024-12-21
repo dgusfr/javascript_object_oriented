@@ -5,7 +5,7 @@ const student = {
   position: 'developer'
 }
 
-// Acessando Propriedades
+// Accessing Properties
 function infoStudent(objstudent, infoStudent){
   return objstudent[infoStudent]
 }
@@ -13,3 +13,4 @@ function infoStudent(objstudent, infoStudent){
 console.log(infoStudent(student, 'name'))
 console.log(student['position'])
 console.log(student.cpf)
+
